@@ -1,0 +1,32 @@
+{
+  "name": "@flyweight.cloud/openroute",
+  "version": "0.6.1",
+  "description": "A lightweight router for Azure Functions with Swagger integration",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "jest --config jestconfig.json",
+    "predeploy": "npm i && npm run lint && npm run test && npm build",
+    "package": "npm run lint && npm run build && npm publish --access public"
+  },
+  "author": "Mark Percival <m@mdp.im>",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/functions": "^1.2.3"
+  },
+  "devDependencies": {
+    "@flyweight.cloud/swaggerist": "^0.2.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "jest": "^27.3.1",
+    "rimraf": "^3.0.2",
+    "stub-azure-function-context": "^2.0.0-alpha.6",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.4"
+  }
+}

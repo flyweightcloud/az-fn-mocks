@@ -1,0 +1,9 @@
+# ignore the .ts files
+tsconfig.json
+tslint.json
+jestconfig.json
+.gitignore
+.github
+coverage
+*.tgz
+tests
