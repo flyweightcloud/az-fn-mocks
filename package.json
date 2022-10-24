@@ -1,6 +1,6 @@
 {
-  "name": "az-fn-mocks",
-  "version": "0.1.0",
+  "name": "@flyweight.cloud/az-fn-mocks",
+  "version": "0.1.1",
   "description": "A simple and lightweight library to quickly build mocks and unit test Azure Functions",
   "main": "lib/index.js",
   "scripts": {
