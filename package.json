@@ -9,7 +9,7 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "test": "jest",
     "predeploy": "yarn install && yarn lint && yarn test && yarn build",
-    "package": "yarn lint && yarn build && np:em publish --access public"
+    "package": "yarn lint && yarn build && npm publish --access public"
   },
   "author": "Mark Percival <m@mdp.im>",
   "license": "MIT",
