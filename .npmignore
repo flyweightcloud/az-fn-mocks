@@ -1,9 +1,13 @@
 # ignore the .ts files
 tsconfig.json
 tslint.json
-jestconfig.json
+jest.config.js
 .gitignore
 .github
 coverage
 *.tgz
 tests
+src
+__tests__
+.devcontainer
+.eslint*
